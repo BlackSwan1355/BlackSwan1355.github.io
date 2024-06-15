@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jorking Me</title>
+    <title>Fullscreen Image</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             overflow: hidden;
+            background-color: black; /* Optional: to fill the space around the image with black */
         }
-        .fullscreen-image {
+        img {
             height: 100%;
-            background-image: url('unknown.png');
-            background-size: cover;
-            background-position: center;
+            width: auto;
         }
     </style>
 </head>
 <body>
-    <div class="fullscreen-image"></div>
+    <img src="unknown.png" alt="Fullscreen Image">
 </body>
 </html>
-
